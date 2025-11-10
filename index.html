@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aaraike Super Speciality Hospital | Davangere</title>
+  <meta name="description"
+    content="Aaraike Super Speciality Hospital — trusted multi-speciality care in Davangere with 24x7 Emergency, experienced consultants, modern diagnostics, and patient-first protocols." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+          colors: {
+            indigoe: { 900: '#1b2559', 800: '#202d6b', 700: '#26357d', 600: '#2c3e90', 500: '#3248a3', 400: '#4f66c1', 300: '#8796de', 200: '#c2cdf2', 100: '#e7eafc', 50: '#f4f6ff' },
+            meadow: { 900: '#084c36', 800: '#0b6044', 700: '#117054', 600: '#158f63', 500: '#17b26a', 400: '#4fcd8f', 300: '#88e0b4', 200: '#bdf0d4', 100: '#e3fbef', 50: '#f3fdf9' },
+            sand: { 50: '#faf8f5', 100: '#f5f1ea' }
+          },
+          boxShadow: { lift: '0 14px 40px rgba(27,37,89,0.15)' },
+          borderRadius: { xl2: '1.25rem' }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased
+    }
+
+    .container {
+      max-width: 1200px
+    }
+
+    /* blob mask */
+    .blob {
+      clip-path: path('M50 0C77 0 100 23 100 50s-23 50-50 50S0 77 0 50 23 0 50 0z');
+    }
+
+    /* Flip card CSS */
+    .flip-container {
+      perspective: 1000px;
+      width: 300px;
+      height: 200px;
+      margin: 50px auto;
+    }
+
+    .flip-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-container.flipped .flip-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-front,
+    .flip-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .flip-back {
+      transform: rotateY(180deg);
+      background-color: #f0f0f0;
+    }
+
+    .flip-button {
+      background-color: #e3f2fd;
+      /* light sky blue background */
+      color: #0d47a1;
+      /* deep blue text for contrast */
+      border: 1px solid #bbdefb;
+      /* subtle border for premium finish */
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    }
+
+    .flip-button:hover {
+      background-color: #bbdefb;
+      /* slightly darker hover */
+      color: #0b3d91;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body class="bg-sand-50 text-slate-800">
+
+  <!-- Kannada Language Toggle (fixed, always visible, larger text) -->
+  <div
+  class="hidden md:block fixed top-[calc(env(safe-area-inset-top)+10px)] right-4 z-[100] pointer-events-auto max-w-[220px] text-right p-1 leading-normal overflow-visible">
+  <a href="/kn/"
+     class="inline-block font-bold text-sm md:text-base bg-gradient-to-r from-[#FFCC00] to-[#D50000] bg-clip-text text-transparent hover:opacity-90 transition"
+     style="padding-bottom:2px;">
+    ಕನ್ನಡದಲ್ಲಿ ವ್ಯವಹರಿಸಲು ಇಲ್ಲಿ ಒತ್ತಿ
+  </a>
+</div>
+
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="container mx-auto px-4 py-3">
+      <!-- Logo, Title & WhatsApp CTA -->
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+        <div class="flex items-center gap-3">
+          <img src="/assets/img/logo.jfif" alt="Aaraike Hospitals logo" class="h-14 w-auto">
+          <div>
+            <p class="text-3xl md:text-4xl leading-tight font-extrabold tracking-tight text-[#FF4500] notranslate">
+              Aaraike Super Speciality Hospital
+            </p>
+            <p class="text-sm font-semibold text-slate-600">Davangere, Karnataka</p>
+          </div>
+        </div>
+        <!-- Kannada link (mobile only) -->
+<p class="mt-1 text-xs font-semibold text-right text-[#D97706] md:hidden overflow-visible pb-1">
+  <a href="/kn/">ಕನ್ನಡದಲ್ಲಿ ವ್ಯವಹರಿಸಲು ಇಲ್ಲಿ ಒತ್ತಿ</a>
+</p>
+      </div>
+
+      <!-- Navigation below title -->
+      <nav
+        class="mt-3 flex flex-wrap justify-center md:justify-between items-center gap-2 md:gap-3 text-sm font-semibold text-slate-700">
+        <a href="#about" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
+       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
+       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
+          About Us
+        </a>
+
+        <a href="#departments" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
+       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
+       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
+          Departments
+        </a>
+
+        <a href="#services" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
+       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
+       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
+          Our Services
+        </a>
+
+        <a href="#contact" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
+       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
+       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
+          Contact
+        </a>
+
+        <a href="#book" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
+       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
+       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
+          Book an Appointment
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden bg-white">
+    <!-- building watermark -->
+    <div class="absolute inset-0 pointer-events-none opacity-40" style="
+      background-image: url('/assets/img/hospital_building_cutout.webp');
+      background-repeat: no-repeat;
+      background-size: 480px auto;
+      background-position: right bottom;
+      filter: brightness(1.05) saturate(0.9);
+    ">
+    </div>
+
+    <!-- left-to-right fade so text stays readable -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-white/0 pointer-events-none"></div>
+
+    <!-- subtle top glow -->
+    <div class="absolute inset-x-0 -top-24 h-48 bg-gradient-to-b from-indigoe-50/40 to-transparent pointer-events-none">
+    </div>
+
+    <!-- content -->
+    <div class="relative container mx-auto px-4 py-12 max-w-screen-xl">
+      <div class="max-w-3xl">
+        <h1 class="text-2xl md:text-3xl font-extrabold leading-tight text-slate-900">
+          Your Health, Our Duty —
+          <span class="text-indigoe-700">Expert care</span>
+          you can trust.
+        </h1>
+
+        <p class="mt-4 text-lg text-slate-600 max-w-xl">
+          Compassionate consultants, NABH-aligned protocols, and seamless diagnostics — all under one roof in Davangere.
+        </p>
+
+        <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700 max-w-2xl">
+          <li class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-meadow-500"></span>
+            24×7 Emergency & ICU
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-meadow-500"></span>
+            Cashless & TPA Helpdesk
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-meadow-500"></span>
+            Preventive Checkups
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="h-2 w-2 rounded-full bg-meadow-500"></span>
+            Women & Child Care
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="scroll-mt-24 container mx-auto px-4 py-16">
+    <div class="rounded-2xl bg-white border border-slate-200 p-6 md:p-10 shadow-lift">
+      <!-- Adjusted grid: photo 1fr, text 2.5fr (gives more width to text) -->
+      <div
+        class="grid gap-6 justify-items-center md:grid-cols-[1fr_2.5fr] md:justify-items-start md:gap-10 md:items-start">
+
+
+        <!-- Founder photo -->
+        <div class="text-center md:text-left">
+          <img src="/assets/img/dr_ravikumar_tg.jpg"
+            alt="Dr. Ravikumar T G, Founder of Aaraike Super Speciality Hospital"
+            class="mx-auto md:mx-0 w-28 h-28 sm:w-36 sm:h-36 md:w-56 md:h-56 rounded-full object-cover ring-4 ring-slate-100 shadow-md" />
+          <div class="mt-4">
+            <p class="text-lg font-extrabold text-slate-900">Dr. Ravikumar T G</p>
+            <p class="text-sm text-slate-600">Founder & Medical Director</p>
+            <p class="text-sm text-slate-500">Aaraike Super Speciality Hospital, Davangere</p>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="md:pl-4">
+          <h2
+            class="text-xl sm:text-2xl md:text-[1.85rem] font-extrabold text-slate-900 leading-tight whitespace-normal md:whitespace-nowrap">
+
+            Caring for our Community, with accountability and heart
+          </h2>
+
+          <p class="mt-4 text-slate-700 text-base md:text-lg leading-relaxed">
+            Aaraike Super Speciality Hospital was started with one simple promise:
+            every patient who walks in should receive the same dignity, clarity,
+            and timely treatment that we expect for our own families.
+          </p>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            Our consultants, nurses, and emergency team work together 24×7 to
+            stabilise, treat and guide — not just medicate and discharge. We
+            follow safe, NABH-aligned clinical practices, maintain transparent
+            communication with attenders, and keep most diagnostics in-house so
+            patients don’t run around.
+          </p>
+
+          <p class="mt-4 text-slate-700 leading-relaxed">
+            We are proud to serve Davangere and surrounding taluks with intensive
+            care, women & child health, trauma support, and preventive medicine —
+            all under one roof.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ================== Departments Section ================== -->
+<section id="departments" class="scroll-mt-24 container mx-auto px-4 py-16">
+  <!-- Header -->
+  <div class="md:flex items-end justify-between gap-8">
+    <div>
+      <h2
+        class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-meadow-600 to-indigoe-700 bg-clip-text text-transparent drop-shadow-sm">
+        Departments
+      </h2>
+      <p class="mt-2 text-slate-600 max-w-2xl">
+        Comprehensive care led by experienced consultants and supported by ICU, NICU, and day-care suites.
+      </p>
+    </div>
+    <a href="#book"
+      class="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-xl2 border border-slate-300 hover:border-indigoe-600 hover:text-indigoe-700 transition">
+      Need guidance?
+    </a>
+  </div>
+
+  <!-- Department Grid -->
+  <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Emergency & Trauma -->
+    <div class="dept-card" data-dept="Emergency & Trauma" data-aos="fade-up" data-aos-delay="0">
+      <div class="flex items-center gap-3">
+        <img src="/assets/img/emergency.jpg" alt="Emergency Icon" class="h-20 w-20">
+        <h3 class="text-lg font-bold text-indigoe-800">Emergency & Trauma</h3>
+      </div>
+      <p class="mt-2 text-slate-600 text-sm">
+        24/7 emergency care with advanced trauma & ICU support.
+      </p>
+      <button
+        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
+        View Doctors
+      </button>
+    </div>
+
+    <!-- General Medicine -->
+    <div class="dept-card" data-dept="General Medicine" data-aos="fade-up" data-aos-delay="100">
+      <div class="flex items-center gap-3">
+        <img src="/assets/img/genral_medicine.jpg" alt="General Icon" class="h-20 w-20">
+        <h3 class="text-lg font-bold text-indigoe-800">General Medicine</h3>
+      </div>
+      <p class="mt-2 text-slate-600 text-sm">
+        Diabetes, hypertension & infectious disease management.
+      </p>
+      <button
+        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
+        View Doctors
+      </button>
+    </div>
+
+    <!-- Cardiology -->
+    <div class="dept-card" data-dept="Cardiology" data-aos="fade-up" data-aos-delay="200">
+      <div class="flex items-center gap-3">
+        <img src="/assets/img/cardiology.jpg" alt="Cardiology Icon" class="h-20 w-30">
+        <h3 class="text-lg font-bold text-indigoe-800">Cardiology</h3>
+      </div>
+      <p class="mt-2 text-slate-600 text-sm">
+        Advanced cardiac care including Echo, ECG & non-invasive diagnostics.
+      </p>
+      <button
+        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
+        View Doctors
+      </button>
+    </div>
+
+    <!-- Orthopedics -->
+    <div class="dept-card" data-dept="Orthopedics" data-aos="fade-up" data-aos-delay="300">
+      <div class="flex items-center gap-3">
+        <img src="/assets/img/orthopedic.jpg" alt="Orthopedic Icon" class="h-20 w-20">
+        <h3 class="text-lg font-bold text-indigoe-800">Orthopedics</h3>
+      </div>
+      <p class="mt-2 text-slate-600 text-sm">
+        Fractures, joint replacements & sports injury management.
+      </p>
+      <button
+        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
+        View Doctors
+      </button>
+    </div>
+
+    <!-- Women & Child -->
+    <div class="dept-card" data-dept="Women & Child" data-aos="fade-up" data-aos-delay="400">
+      <div class="flex items-center gap-3">
+        <img src="/assets/img/womenchild.jpg" alt="Women & Child Icon" class="h-20 w-20">
+        <h3 class="text-lg font-bold text-indigoe-800">Women & Child</h3>
+      </div>
+      <p class="mt-2 text-slate-600 text-sm">
+        Comprehensive OBG, neonatal & pediatric care.
+      </p>
+      <button
+        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
+        View Doctors
+      </button>
+    </div>
+
+    <!-- Diagnostics -->
+    <div class="dept-card" data-dept="Diagnostics" data-aos="fade-up" data-aos-delay="500">
+      <div class="flex items-center gap-3">
+        <img src="/assets/img/diagnostics.jpg" alt="Diagnostics Icon" class="h-20 w-20">
+        <h3 class="text-lg font-bold text-indigoe-800">Diagnostics</h3>
+      </div>
+      <p class="mt-2 text-slate-600 text-sm">
+        Digital X-Ray, Ultrasound, pathology & pharmacy.
+      </p>
+      <button
+        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
+        View Doctors
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ================== Doctor Modal ================== -->
+<div id="doctorModal"
+  class="fixed inset-0 bg-black/50 backdrop-blur-sm hidden items-center justify-center z-50 transition">
+  <div class="bg-white rounded-2xl p-6 md:p-8 max-w-md w-full relative shadow-2xl ring-1 ring-slate-200 animate-fadeIn">
+    <button id="closeModal"
+      class="absolute top-3 right-4 text-slate-500 hover:text-red-500 text-2xl font-bold">&times;</button>
+    <h3 id="modalDept" class="text-2xl font-bold text-indigoe-800 mb-4"></h3>
+    <div id="doctorList" class="grid gap-4"></div>
+    <div class="mt-6 text-center">
+      <a href="#book"
+        class="inline-block px-5 py-2 rounded-xl bg-meadow-600 text-white font-semibold hover:bg-meadow-700 transition">
+        Book Appointment
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ================== Script ================== -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => AOS.init({ duration: 800, once: true, offset: 100 }));
+
+  const deptInfo = {
+    "Emergency & Trauma": [
+      { name: "Dr. Rakesh", spec: "Trauma Specialist", img: "/assets/img/doctors/rakesh.jpg" },
+      { name: "Dr. Kavya", spec: "Emergency Medicine", img: "/assets/img/doctors/kavya.jpg" }
+    ],
+    "General Medicine": [
+      { name: "Dr. Praveen", spec: "General Physician", img: "/assets/img/doctors/praveen.jpg" },
+      { name: "Dr. Nisha", spec: "Diabetologist", img: "/assets/img/doctors/nisha.jpg" }
+    ],
+    "Cardiology": [
+      { name: "Dr. Sridhar", spec: "Consultant Cardiologist", img: "/assets/img/doctors/sridhar.jpg" },
+      { name: "Dr. Divya", spec: "Cardiac Rehab Specialist", img: "/assets/img/doctors/divya.jpg" }
+    ],
+    "Orthopedics": [
+      { name: "Dr. Manjunath", spec: "Joint Replacement Surgeon", img: "/assets/img/doctors/manjunath.jpg" },
+      { name: "Dr. Vishal", spec: "Sports Injury Specialist", img: "/assets/img/doctors/vishal.jpg" }
+    ],
+    "Women & Child": [
+      { name: "Dr. Kavitha", spec: "Gynecologist & Obstetrician", img: "/assets/img/doctors/kavitha.jpg" },
+      { name: "Dr. Preethi", spec: "Pediatrician", img: "/assets/img/doctors/preethi.jpg" }
+    ],
+    "Diagnostics": [
+      { name: "Dr. Nagesh", spec: "Radiologist", img: "/assets/img/doctors/nagesh.jpg" },
+      { name: "Dr. Sneha", spec: "Pathologist", img: "/assets/img/doctors/sneha.jpg" }
+    ]
+  };
+
+  const viewBtns = document.querySelectorAll('.view-doctors-btn');
+  const modal = document.getElementById('doctorModal');
+  const closeModal = document.getElementById('closeModal');
+  const modalDept = document.getElementById('modalDept');
+  const doctorList = document.getElementById('doctorList');
+
+  viewBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const deptName = btn.closest('.dept-card').dataset.dept;
+      const doctors = deptInfo[deptName];
+      modalDept.textContent = deptName + " Department";
+      doctorList.innerHTML = doctors.map(doc => `
+        <div class="flex items-center gap-3">
+          <img src="${doc.img}" alt="${doc.name}" class="h-12 w-12 rounded-full object-cover ring-2 ring-meadow-200">
+          <div>
+            <p class="font-semibold">${doc.name}</p>
+            <p class="text-sm text-slate-600">${doc.spec}</p>
+          </div>
+        </div>`).join('');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    });
+  });
+
+  closeModal.addEventListener('click', () => modal.classList.add('hidden'));
+  modal.addEventListener('click', e => { if (e.target === modal) modal.classList.add('hidden'); });
+</script>
+
+<!-- ================== Styles ================== -->
+<style>
+  /* Department Cards */
+  .dept-card {
+    background: white;
+    border-radius: 1rem;
+    border: 1px solid #e2e8f0;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+  }
+
+  .dept-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
+  }
+
+  /* Fade Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .animate-fadeIn {
+    animation: fadeIn 0.3s ease-out forwards;
+  }
+
+  /* Button Gradient Hover */
+  .view-doctors-btn:hover {
+    background: linear-gradient(to right, #4fd1c5, #2f855a);
+    color: white !important;
+    transform: translateY(-2px);
+  }
+</style>
+
+<!-- ================== Doctors Gallery Section ================== -->
+<section id="doctors" class="scroll-mt-24 container mx-auto px-4 py-16">
+  <!-- Header -->
+  <div class="md:flex items-end justify-between gap-8 mb-10">
+    <div>
+      <h2
+        class="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-meadow-600 to-indigoe-700 bg-clip-text text-transparent drop-shadow-sm">
+        Our Expert Doctors
+      </h2>
+      <p class="mt-2 text-slate-600 max-w-2xl">
+        Experienced consultants across multiple specialties providing trusted care for you and your family.
+      </p>
+    </div>
+
+    <!-- Filter Controls -->
+    <div class="flex flex-col sm:flex-row gap-3 mt-4 md:mt-0">
+      <input id="searchDoctor" type="text" placeholder="Search doctor or specialty"
+        class="border border-slate-300 rounded-xl2 px-3 py-2 focus:border-meadow-600 focus:ring-meadow-600 w-full sm:w-64" />
+      <select id="filterDept"
+        class="border border-slate-300 rounded-xl2 px-3 py-2 focus:border-meadow-600 focus:ring-meadow-600 w-full sm:w-48">
+        <option value="All">All Departments</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="General Medicine">General Medicine</option>
+        <option value="Emergency & Trauma">Emergency & Trauma</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Women & Child">Women & Child</option>
+        <option value="Diagnostics">Diagnostics</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Doctors Grid -->
+  <div id="doctorGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- Doctor Card Template (Generated by JS) -->
+  </div>
+</section>
+
+<!-- ================== JS ================== -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => AOS.init({ duration: 800, once: true, offset: 100 }));
+
+  const doctors = [
+    { name: "Dr. Rakesh", spec: "Trauma Specialist", dept: "Emergency & Trauma", img: "/assets/img/doctors/rakesh.jpg" },
+    { name: "Dr. Kavya", spec: "Emergency Medicine", dept: "Emergency & Trauma", img: "/assets/img/doctors/kavya.jpg" },
+    { name: "Dr. Praveen", spec: "General Physician", dept: "General Medicine", img: "/assets/img/doctors/praveen.jpg" },
+    { name: "Dr. Nisha", spec: "Diabetologist", dept: "General Medicine", img: "/assets/img/doctors/nisha.jpg" },
+    { name: "Dr. Sridhar", spec: "Cardiologist", dept: "Cardiology", img: "/assets/img/doctors/sridhar.jpg" },
+    { name: "Dr. Divya", spec: "Cardiac Rehab Specialist", dept: "Cardiology", img: "/assets/img/doctors/divya.jpg" },
+    { name: "Dr. Manjunath", spec: "Joint Replacement Surgeon", dept: "Orthopedics", img: "/assets/img/doctors/manjunath.jpg" },
+    { name: "Dr. Vishal", spec: "Sports Injury Specialist", dept: "Orthopedics", img: "/assets/img/doctors/vishal.jpg" },
+    { name: "Dr. Kavitha", spec: "Gynecologist & Obstetrician", dept: "Women & Child", img: "/assets/img/doctors/kavitha.jpg" },
+    { name: "Dr. Preethi", spec: "Pediatrician", dept: "Women & Child", img: "/assets/img/doctors/preethi.jpg" },
+    { name: "Dr. Nagesh", spec: "Radiologist", dept: "Diagnostics", img: "/assets/img/doctors/nagesh.jpg" },
+    { name: "Dr. Sneha", spec: "Pathologist", dept: "Diagnostics", img: "/assets/img/doctors/sneha.jpg" }
+  ];
+
+  const grid = document.getElementById("doctorGrid");
+  const searchInput = document.getElementById("searchDoctor");
+  const filterDept = document.getElementById("filterDept");
+
+  function renderDoctors(list) {
+    grid.innerHTML = list.map(doc => `
+      <div class="doctor-card bg-white rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg hover:-translate-y-1 transition p-6 text-center" data-aos="fade-up">
+        <img src="${doc.img}" alt="${doc.name}" class="mx-auto h-28 w-28 rounded-full object-cover ring-2 ring-meadow-300">
+        <h3 class="mt-4 text-lg font-bold text-indigoe-800">${doc.name}</h3>
+        <p class="text-slate-600 text-sm">${doc.spec}</p>
+        <p class="text-xs text-slate-500 mt-1">${doc.dept}</p>
+        <a href="#book"
+          class="mt-4 inline-block px-4 py-2 rounded-xl bg-meadow-600 text-white font-semibold hover:bg-meadow-700 transition">
+          Book Appointment
+        </a>
+      </div>
+    `).join('');
+  }
+
+  function filterDoctors() {
+    const query = searchInput.value.toLowerCase();
+    const dept = filterDept.value;
+    const filtered = doctors.filter(doc => {
+      const matchesSearch = doc.name.toLowerCase().includes(query) || doc.spec.toLowerCase().includes(query);
+      const matchesDept = dept === "All" || doc.dept === dept;
+      return matchesSearch && matchesDept;
+    });
+    renderDoctors(filtered);
+  }
+
+  searchInput.addEventListener("input", filterDoctors);
+  filterDept.addEventListener("change", filterDoctors);
+
+  renderDoctors(doctors);
+</script>
+
+<!-- ================== Styles ================== -->
+<style>
+  .doctor-card {
+    transition: all 0.3s ease;
+  }
+  .doctor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }
+</style>
+
+
+  <!-- Our Services -->
+  <section id="services" class="scroll-mt-24 bg-white border-y border-slate-200">
+    <div class="container mx-auto px-4 py-16">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-indigoe-900">Our Services</h2>
+      <p class="mt-2 text-slate-600 max-w-2xl">
+        Comprehensive healthcare under one roof — delivered by experienced doctors, nurses, and diagnostic teams.
+      </p>
+
+      <div class="mt-8 grid md:grid-cols-2 lg:grid-cols-3 gap-6 text-slate-700">
+        <ul class="list-disc list-inside space-y-2">
+          <li>24×7 Emergency & Trauma Care</li>
+          <li>Outpatient (OPD) & Inpatient (IPD) Services</li>
+          <li>General Medicine & Family Practice</li>
+          <li>Cardiology (Non-invasive & Echo)</li>
+          <li>Orthopedics & Fracture Management</li>
+          <li>Obstetrics & Gynecology</li>
+        </ul>
+
+        <ul class="list-disc list-inside space-y-2">
+          <li>Pediatrics & Neonatal Care (NICU)</li>
+          <li>General & Laparoscopic Surgery</li>
+          <li>ENT (Ear, Nose & Throat)</li>
+          <li>Dermatology & Skin Care</li>
+          <li>Physiotherapy & Rehabilitation</li>
+          <li>Urology & Nephrology</li>
+        </ul>
+
+        <ul class="list-disc list-inside space-y-2">
+          <li>Radiology & Imaging (Digital X-Ray, Ultrasound)</li>
+          <li>Pathology & Diagnostic Laboratory</li>
+          <li>Pharmacy (24×7)</li>
+          <li>Preventive Health Check-ups</li>
+          <li>Diet & Nutrition Counselling</li>
+          <li>Cashless Insurance & TPA Assistance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="container mx-auto px-4 py-16">
+    <div class="grid md:grid-cols-4 gap-6">
+      <div class="rounded-2xl bg-white border border-slate-200 p-6">
+        <p class="text-3xl font-extrabold text-indigoe-700">24x7</p>
+        <p class="text-slate-600">Emergency & ICU</p>
+      </div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-6">
+        <p class="text-3xl font-extrabold text-indigoe-700">100+</p>
+        <p class="text-slate-600">Beds</p>
+      </div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-6">
+        <p class="text-3xl font-extrabold text-indigoe-700">15+</p>
+        <p class="text-slate-600">Specialties</p>
+      </div>
+      <div class="rounded-2xl bg-white border border-slate-200 p-6">
+        <p class="text-3xl font-extrabold text-indigoe-700">Cashless</p>
+        <p class="text-slate-600">Most TPAs supported</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Appointment Form -->
+  <section id="book" class="scroll-mt-32 container mx-auto px-4 pb-16 grid md:grid-cols-2 gap-10 items-start">
+    <div
+      class="max-w-xl rounded-2xl bg-white/80 backdrop-blur-sm border border-slate-200 shadow-lift ring-1 ring-slate-100 p-6 md:p-8">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Book an Appointment</h2>
+      <p class="mt-2 text-slate-600 text-base leading-relaxed"> Leave your details — our coordinator will call back.</p>
+      <div id="appointment-container">
+        <form id="appointment-form" class="mt-6 grid gap-4" action="https://formspree.io/f/xzzjkjpy" method="POST">
+          <div class="grid md:grid-cols-2 gap-x-6 gap-y-4">
+            <label class="grid gap-1">
+              <span class="text-sm font-medium">Full Name</span>
+              <input required name="name" type="text" class="w-full rounded-xl2 border border-slate-300 bg-white/90 px-4 py-2 text-slate-900 placeholder-slate-400
+          focus:border-indigoe-600 focus:ring-indigoe-600" placeholder="Your name" />
+            </label>
+
+            <label class="grid gap-1">
+              <span class="text-sm font-medium">Phone</span>
+              <input required name="phone" type="tel" pattern="^[6-9][0-9]{9}$"
+                title="Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9" class="w-full rounded-xl2 border border-slate-300 bg-white/90 px-4 py-2 text-slate-900 placeholder-slate-400
+          focus:border-indigoe-600 focus:ring-indigoe-600" placeholder="10-digit mobile number" />
+            </label>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-x-6 gap-y-4">
+            <label class="grid gap-1">
+              <span class="text-sm font-medium">Department</span>
+              <select name="department" required class="rounded-xl2 border border-slate-300 bg-white/90 px-4 py-2 text-slate-900 placeholder-slate-400
+          focus:border-indigoe-600 focus:ring-indigoe-600">
+                <option value="" disabled selected>Select department</option>
+                <option>General Medicine</option>
+                <option>Cardiology</option>
+                <option>Orthopedics</option>
+                <option>Gynecology</option>
+                <option>Pediatrics</option>
+                <option>Diagnostics</option>
+              </select>
+            </label>
+
+            <label class="grid gap-1">
+              <span class="text-sm font-medium">Preferred Date</span>
+              <input required name="date" type="date" class="rounded-xl2 border border-slate-300 bg-white/90 px-4 py-2 text-slate-900 placeholder-slate-400
+          focus:border-indigoe-600 focus:ring-indigoe-600" />
+            </label>
+          </div>
+
+          <label class="grid gap-1">
+            <span class="text-sm font-medium">Message</span>
+            <textarea name="message" rows="4" class="rounded-xl2 border border-slate-300 bg-white/90 px-4 py-2 text-slate-900 placeholder-slate-400
+        focus:border-indigoe-600 focus:ring-indigoe-600" placeholder="Briefly describe your concern"></textarea>
+          </label>
+
+          <button class="mt-4 inline-flex items-center justify-center gap-2 bg-indigoe-600 text-white px-6 py-3 rounded-xl2 font-semibold
+      shadow-md hover:bg-indigoe-700 hover:shadow-lg transition">
+            Submit
+          </button>
+        </form>
+
+        <!-- Success message (hidden initially) -->
+        <div id="appointment-success" class="hidden text-center py-12">
+          <p class="text-2xl font-bold text-green-700 mb-3">
+            Thank you. Appointment request submitted successfully!
+          </p>
+          <p class="text-slate-700 mb-6">
+            Our staff will contact you shortly.
+          </p>
+          <button id="book-again"
+            class="inline-flex items-center justify-center bg-indigoe-600 text-white px-5 py-2 rounded-xl2 font-semibold hover:bg-indigoe-700 transition">
+            Book another appointment
+          </button>
+        </div>
+      </div>
+
+      <div class="hidden md:block">
+        <!-- placeholder right column -->
+      </div>
+
+  </section>
+
+  <!-- Contact & Map -->
+  <section id="contact" class="scroll-mt-32 container mx-auto px-4 pb-24">
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div class="rounded-2xl bg-white border border-slate-200 p-6">
+        <h3 class="text-xl font-extrabold">Contact</h3>
+        <ul class="mt-4 grid gap-3 text-slate-700">
+          <li class="flex gap-3"><span class="mt-0.5">📍</span> #1686/1, Between 6th & 7th Cross, Yajaman Mothi Doddappa
+            Layout, Hadadi Road, Davangere - 577002</li>
+          <li class="flex gap-3"><span>📞</span> <a class="underline decoration-indigoe-300 underline-offset-4"
+              href="tel:+918431541487">+91 84315 41487</a> · <a
+              class="underline decoration-indigoe-300 underline-offset-4" href="tel:08192233446">08192-233446</a></li>
+          <li class="flex gap-3"><span>✉️</span> <a class="underline decoration-indigoe-300 underline-offset-4"
+              href="mailto:care@aaraikehospitals.com">care@aaraikehospitals.com</a></li>
+          <li class="flex gap-3"><span>🕒</span> 24x7 Emergency • OPD: 9am–7pm</li>
+        </ul>
+      </div>
+      <div class="rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-lift">
+        <iframe title="Google Map"
+          src="https://maps.google.com/maps?q=Hadadi%20Road%20Davangere&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          class="w-full h-80"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-indigoe-900 text-white">
+    <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+      <div>
+        <p class="text-xl font-extrabold">Aaraike Super Speciality Hospital</p>
+        <p class="mt-1 text-indigoe-200">Care • Trust • Excellence</p>
+      </div>
+      <nav class="grid gap-2 text-indigoe-200">
+        <a href="#departments" class="hover:text-white">Departments</a>
+        <a href="#services" class="hover:text-white">Our Services</a>
+        <a href="#book" class="hover:text-white">Appointments</a>
+        <a href="/kn/" class="hover:text-white">ಕನ್ನಡ</a>
+      </nav>
+      <div class="grid gap-3">
+        <p class="text-sm text-indigoe-300">© <span id="year"></span> Aaraike Super Speciality Hospital, Davangere</p>
+        <p class="text-sm text-indigoe-300">
+          Developed and maintained by
+          <a href="https://sidtech.in" target="_blank" rel="noopener"
+            class="font-semibold text-white hover:text-meadow-400 transition">
+            SidTech
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile CTA -->
+  <div class="fixed inset-x-0 bottom-0 z-50 md:hidden bg-white/95 backdrop-blur border-t border-slate-200">
+    <div class="container mx-auto px-4 py-3 grid grid-cols-3 gap-3">
+      <a href="#book"
+        class="inline-flex items-center justify-center rounded-xl2 bg-indigoe-600 text-white py-2">Book</a>
+      <a href="tel:+918431541487"
+        class="inline-flex items-center justify-center rounded-xl2 border border-slate-300">Call</a>
+      <a href="https://wa.me/918431541487"
+        class="inline-flex items-center justify-center rounded-xl2 border border-slate-300">WhatsApp</a>
+    </div>
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/918431541487" target="_blank"
+    class="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 p-4 rounded-full shadow-lg hover:shadow-xl transition"
+    style="background-color:#25D366;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M12 2C6.48 2 2 6.05 2 11.1c0 1.86.53 3.58 1.45 5.05L2 22l6.1-1.92A10.6 10.6 0 0012 20.2c5.52 0 10-4.05 10-9.1S17.52 2 12 2zm0 16.8c-1.56 0-3.05-.43-4.36-1.24l-.31-.19-3.62 1.14 1.18-3.48-.21-.33a8.12 8.12 0 01-1.27-4.19c0-4.24 3.67-7.7 8.18-7.7s8.18 3.46 8.18 7.7-3.67 7.7-8.18 7.7z" />
+      <path
+        d="M17.12 13.76c-.28-.14-1.67-.82-1.93-.91-.26-.09-.45-.14-.64.14s-.74.91-.9 1.1c-.17.19-.33.21-.61.07-.28-.14-1.17-.43-2.23-1.38-.82-.74-1.38-1.64-1.55-1.92-.17-.28-.02-.43.13-.57.13-.12.28-.33.42-.5.14-.17.19-.28.28-.47.09-.19.04-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.56-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36s-.99.97-.99 2.36.99 2.74 1.13 2.93c.14.19 1.95 3.18 4.73 4.34.66.29 1.18.46 1.58.59.66.21 1.26.18 1.74.11.53-.08 1.67-.68 1.9-1.33.24-.65.24-1.21.17-1.33-.07-.12-.25-.19-.53-.33z" />
+    </svg>
+  </a>
+  <script>
+    // Flip card functionality
+    document.querySelectorAll('.flip-container').forEach(container => {
+      container.addEventListener('click', () => {
+        container.classList.toggle('flipped');
+      });
+    });
+  </script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const form = document.getElementById("appointment-form");
+      const container = document.getElementById("appointment-container");
+      const successBox = document.getElementById("appointment-success");
+      const bookAgain = document.getElementById("book-again");
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            form.classList.add("hidden");
+            successBox.classList.remove("hidden");
+          } else {
+            alert("Something went wrong. Please try again.");
+          }
+        } catch (err) {
+          alert("Network error. Please check your connection.");
+        }
+      });
+
+      bookAgain.addEventListener("click", () => {
+        form.reset();
+        successBox.classList.add("hidden");
+        form.classList.remove("hidden");
+        form.scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+
+<!-- Floating 24x7 Emergency Pill -->
+<!-- desktop pill -->
+<a href="tel:+918431541487"
+   class="hidden md:flex fixed top-6 right-[16rem] z-[9999] items-center gap-2
+          rounded-full bg-red-600 text-white px-4 py-2 text-base shadow-xl ring-2 ring-white/70
+          animate-pulse hover:animate-none hover:bg-red-700 transition"
+   aria-label="Call 24x7 Emergency at +91 84315 41487">
+  <span class="font-semibold tracking-tight">24×7 Emergency</span>
+  <span class="ml-1 text-xs bg-white/20 px-2 py-0.5 rounded-full">Call now</span>
+</a>
+
+<!-- mobile pill -->
+<a href="tel:+918431541487"
+   class="flex md:hidden fixed right-4 top-[5.2rem] z-[9999] items-center gap-2
+          rounded-full bg-red-600 text-white px-3 py-2 text-sm shadow-xl ring-2 ring-white/70
+          animate-pulse hover:animate-none hover:bg-red-700 transition"
+   aria-label="Call 24x7 Emergency at +91 84315 41487">
+  <span class="font-semibold leading-none">24×7 Emergency</span>
+  <span class="ml-1 text-[10px] bg-white/20 px-2 py-0.5 rounded-full leading-none">Call now</span>
+</a>
+
+
+</html>
