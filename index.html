@@ -167,89 +167,75 @@
   </a>
 </div>
 
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-4">
 
-<header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="container mx-auto px-4 py-3">
-      <!-- Logo, Title & WhatsApp CTA -->
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-        <div class="flex items-center gap-3">
-          <img src="/asset/img/logo.jpg" alt="Suchethana Hospital logo" class="h-14 w-auto">
-          <style>
-            /*slide animation */
-            @keyframes fadeSlideUp {
-              0% { opacity: 0; transform: translateY(20px); }
-              100% { opacity: 1; transform: translateY(0); }
-            }
-            /* Slight shimmer effect */
-            @keyframes subtleShimmer {
-              0% { background-position: 0% 50%; }
-              100% { background-position: 100% 50%; }
-            }
-            </style>
-        <div class="animate-[fadeSlideUp_0.8s_ease-out]">
-          <p class="text-3xl md:text-4xl font-extrabold leading-tight tracking-tight 
-                    bg-gradient-to-r from-[#4169E1] via-[#5A7BFF] to-[#2A4FD7]
-                    bg-clip-text text-transparent
-                    animate-[subtleShimmer_4s_linear_infinite] bg-[length:200%_200%]">
+    <!-- TOP ROW: Logo + Title + Emergency -->
+    <div class="flex items-center justify-between">
+
+      <!-- LOGO + HOSPITAL NAME -->
+      <div class="flex items-center gap-3">
+        <img src="/assest/img/logo.jpg" class="h-14 w-auto drop-shadow" alt="Logo">
+
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#4169E1] leading-tight">
             Suchethana Multi-Speciality Hospital
-          </p>
-          <p class="text-sm font-semibold text-slate-600 opacity-0 animate-[fadeSlideUp_1.2s_ease-out_forwards] mt-1">
-            Davangere, Karnataka
-          </p>
+          </h1>
+          <p class="text-sm font-semibold text-slate-600">Davangere, Karnataka</p>
         </div>
-        <!-- Kannada link (mobile only) -->
-<p class="mt-1 text-xs font-semibold text-right text-[#D97706] md:hidden overflow-visible pb-1">
-  <a href="/kn/">ಕನ್ನಡದಲ್ಲಿ ವ್ಯವಹರಿಸಲು ಇಲ್ಲಿ ಒತ್ತಿ</a>
-</p>
-      </div>
-        <!-- Kannada link (mobile only) -->
-<p class="mt-1 text-xs font-semibold text-right text-[#D97706] md:hidden overflow-visible pb-1">
-  <a href="/kn/">ಕನ್ನಡದಲ್ಲಿ ವ್ಯವಹರಿಸಲು ಇಲ್ಲಿ ಒತ್ತಿ</a>
-</p>
       </div>
 
-      <!-- Navigation below title -->
-<nav class="w-full flex justify-between items-center mt-5 overflow-x-auto gap-3 
-            px-4 md:px-10 lg:px-20 scrollbar-hide">
+      <!-- EMERGENCY BUTTON (Desktop) -->
+      <a href="tel:+918431541487"
+          class="hidden md:flex fixed top-6 right-[16rem] z-[9999] items-center gap-2
+          rounded-full bg-red-600 text-white px-4 py-2 text-base shadow-xl ring-2 ring-white/70
+          animate-pulse hover:animate-none hover:bg-red-700 transition"
+          aria-label="Call 24x7 Emergency at +91 84315 41487">
+          <span class="font-semibold tracking-tight">24×7 Emergency</span>
+          <span class="ml-1 text-xs bg-white/20 px-2 py-0.5 rounded-full">Call now</span>
+        </a>
+      </div>
 
-  <a href="#about"
-     class="whitespace-nowrap px-6 py-3 rounded-full bg-white/70 backdrop-blur 
-            border border-slate-200 shadow-sm hover:shadow-md 
-            hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200">
-    About Us
-  </a>
+    <!-- EMERGENCY BUTTON (Mobile) -->
+    <a href="tel:+918431541487"
+   class="hidden md:flex fixed top-6 right-[16rem] z-[9999] items-center gap-2
+          rounded-full bg-red-600 text-white px-4 py-2 text-base shadow-xl ring-2 ring-white/70
+          animate-pulse hover:animate-none hover:bg-red-700 transition"
+   aria-label="Call 24x7 Emergency at +91 84315 41487">
+  <span class="font-semibold tracking-tight">24×7 Emergency</span>
+  <span class="ml-1 text-xs bg-white/20 px-2 py-0.5 rounded-full">Call now</span>
+</a>
 
-  <a href="#departments"
-     class="whitespace-nowrap px-6 py-3 rounded-full bg-white/70 backdrop-blur 
-            border border-slate-200 shadow-sm hover:shadow-md 
-            hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200">
-    Departments
-  </a>
+    <!-- NAVIGATION ROW -->
+    <nav class="mt-5 flex flex-wrap justify-center gap-3 text-sm font-semibold">
 
-  <a href="#services"
-     class="whitespace-nowrap px-6 py-3 rounded-full bg-white/70 backdrop-blur 
-            border border-slate-200 shadow-sm hover:shadow-md 
-            hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200">
-    Our Services
-  </a>
+      <a href="#about"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        About Us
+      </a>
 
-  <a href="#contact"
-     class="whitespace-nowrap px-6 py-3 rounded-full bg-white/70 backdrop-blur 
-            border border-slate-200 shadow-sm hover:shadow-md 
-            hover:bg-indigo-50 hover:text-indigo-700 transition-all duration-200">
-    Contact
-  </a>
+      <a href="#departments"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        Departments
+      </a>
 
-  <a href="#book"
-     class="whitespace-nowrap px-6 py-3 rounded-full bg-indigo-600 text-white 
-            shadow-sm hover:bg-indigo-700 hover:shadow-md transition-all duration-200">
-    Book an Appointment
-  </a>
-</nav>
+      <a href="#services"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        Our Services
+      </a>
 
+      <a href="#book"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        Book Appointment
+      </a>
 
-    </div>
-  </header>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero -->
   <section class="relative overflow-hidden bg-white">
