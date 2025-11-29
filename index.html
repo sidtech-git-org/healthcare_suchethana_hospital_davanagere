@@ -4,9 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aaraike Super Speciality Hospital | Davangere</title>
+  <title>Suchethana Multi Speciality Hospital | Davangere</title>
   <meta name="description"
-    content="Aaraike Super Speciality Hospital — trusted multi-speciality care in Davangere with 24x7 Emergency, experienced consultants, modern diagnostics, and patient-first protocols." />
+    content="Suchethana Multi Speciality Hospital — trusted multi-speciality care in Davangere with 24x7 Emergency, modern diagnostics, and experienced consultants." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
@@ -16,31 +16,74 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { sans: ['Plus Jakarta Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
-          colors: {
-            indigoe: { 900: '#1b2559', 800: '#202d6b', 700: '#26357d', 600: '#2c3e90', 500: '#3248a3', 400: '#4f66c1', 300: '#8796de', 200: '#c2cdf2', 100: '#e7eafc', 50: '#f4f6ff' },
-            meadow: { 900: '#084c36', 800: '#0b6044', 700: '#117054', 600: '#158f63', 500: '#17b26a', 400: '#4fcd8f', 300: '#88e0b4', 200: '#bdf0d4', 100: '#e3fbef', 50: '#f3fdf9' },
-            sand: { 50: '#faf8f5', 100: '#f5f1ea' }
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            display: ['Manrope', 'sans-serif'],
           },
-          boxShadow: { lift: '0 14px 40px rgba(27,37,89,0.15)' },
-          borderRadius: { xl2: '1.25rem' }
-        }
-      }
+          colors: {
+            ocean: {
+              900: '#0C2340', 800: '#123A63', 700: '#195585', 600: '#1F6EA6',
+              500: '#278FCF', 400: '#59B5EA', 300: '#93D5F3', 200: '#C9ECFA', 100: '#E8F8FF', 50: '#F5FCFF'
+            },
+            mint: {
+              900: '#10413B', 800: '#14655E', 700: '#188A82', 600: '#1FB0A6',
+              500: '#26D0C6', 400: '#6DE1D7', 300: '#A4EFE9', 200: '#D3F8F5', 100: '#EBFFFE', 50: '#F6FFFE'
+            },
+            ivory: { 50: '#FAFAF9', 100: '#F4F4F2' },
+          },
+          boxShadow: {
+            soft: '0 8px 24px rgba(39,143,207,0.1)',
+            lift: '0 14px 40px rgba(31,110,166,0.15)',
+            glow: '0 0 20px rgba(39,143,207,0.3)',
+          },
+          borderRadius: { xl2: '1.25rem' },
+        },
+      },
     }
   </script>
   <style>
     body {
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased
+      background-color: #FAFAF9;
+      color: #0C2340;
+      font-family: 'Poppins', sans-serif;
+      -webkit-font-smoothing: antialiased;
     }
 
-    .container {
-      max-width: 1200px
+    h1, h2, h3 {
+      background: linear-gradient(90deg, #1F6EA6, #26D0C6);
+      -webkit-background-clip: text;
+      color: transparent;
     }
 
-    /* blob mask */
-    .blob {
-      clip-path: path('M50 0C77 0 100 23 100 50s-23 50-50 50S0 77 0 50 23 0 50 0z');
+    .btn-premium {
+      background: linear-gradient(90deg, #278FCF, #26D0C6);
+      color: white;
+      font-weight: 600;
+      border-radius: 1rem;
+      padding: 0.75rem 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .btn-premium:hover {
+      background: linear-gradient(90deg, #1F6EA6, #20BFB3);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(31,110,166,0.3);
+    }
+
+    .dept-card, .doctor-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(10px);
+      transition: all 0.3s ease;
+      border: 1px solid #e2e8f0;
+    }
+
+    .dept-card:hover, .doctor-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(39,143,207,0.2);
+    }
+
+    .hero-bg {
+      background: linear-gradient(135deg, #E8F8FF 0%, #F6FFFE 100%);
     }
 
     /* Flip card CSS */
@@ -124,62 +167,75 @@
   </a>
 </div>
 
+<header class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 py-4">
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
-    <div class="container mx-auto px-4 py-3">
-      <!-- Logo, Title & WhatsApp CTA -->
-      <div class="flex flex-col md:flex-row md:items-center md:justify-between">
-        <div class="flex items-center gap-3">
-          <img src="/assets/img/logo.jfif" alt="Aaraike Hospitals logo" class="h-14 w-auto">
-          <div>
-            <p class="text-3xl md:text-4xl leading-tight font-extrabold tracking-tight text-[#FF4500] notranslate">
-              Aaraike Super Speciality Hospital
-            </p>
-            <p class="text-sm font-semibold text-slate-600">Davangere, Karnataka</p>
-          </div>
+    <!-- TOP ROW: Logo + Title + Emergency -->
+    <div class="flex items-center justify-between">
+
+      <!-- LOGO + HOSPITAL NAME -->
+      <div class="flex items-center gap-3">
+        <img src="/assest/img/logo.jpg" class="h-14 w-auto drop-shadow" alt="Logo">
+
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold tracking-tight text-[#4169E1] leading-tight">
+            Suchethana Multi-Speciality Hospital
+          </h1>
+          <p class="text-sm font-semibold text-slate-600">Davangere, Karnataka</p>
         </div>
-        <!-- Kannada link (mobile only) -->
-<p class="mt-1 text-xs font-semibold text-right text-[#D97706] md:hidden overflow-visible pb-1">
-  <a href="/kn/">ಕನ್ನಡದಲ್ಲಿ ವ್ಯವಹರಿಸಲು ಇಲ್ಲಿ ಒತ್ತಿ</a>
-</p>
       </div>
 
-      <!-- Navigation below title -->
-      <nav
-        class="mt-3 flex flex-wrap justify-center md:justify-between items-center gap-2 md:gap-3 text-sm font-semibold text-slate-700">
-        <a href="#about" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
-       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
-       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
-          About Us
+      <!-- EMERGENCY BUTTON (Desktop) -->
+      <a href="tel:+918431541487"
+          class="hidden md:flex fixed top-6 right-[16rem] z-[9999] items-center gap-2
+          rounded-full bg-red-600 text-white px-4 py-2 text-base shadow-xl ring-2 ring-white/70
+          animate-pulse hover:animate-none hover:bg-red-700 transition"
+          aria-label="Call 24x7 Emergency at +91 84315 41487">
+          <span class="font-semibold tracking-tight">24×7 Emergency</span>
+          <span class="ml-1 text-xs bg-white/20 px-2 py-0.5 rounded-full">Call now</span>
         </a>
+      </div>
 
-        <a href="#departments" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
-       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
-       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
-          Departments
-        </a>
+    <!-- EMERGENCY BUTTON (Mobile) -->
+    <a href="tel:+918431541487"
+   class="hidden md:flex fixed top-6 right-[16rem] z-[9999] items-center gap-2
+          rounded-full bg-red-600 text-white px-4 py-2 text-base shadow-xl ring-2 ring-white/70
+          animate-pulse hover:animate-none hover:bg-red-700 transition"
+   aria-label="Call 24x7 Emergency at +91 84315 41487">
+  <span class="font-semibold tracking-tight">24×7 Emergency</span>
+  <span class="ml-1 text-xs bg-white/20 px-2 py-0.5 rounded-full">Call now</span>
+</a>
 
-        <a href="#services" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
-       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
-       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
-          Our Services
-        </a>
+    <!-- NAVIGATION ROW -->
+    <nav class="mt-5 flex flex-wrap justify-center gap-3 text-sm font-semibold">
 
-        <a href="#contact" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
-       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
-       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
-          Contact
-        </a>
+      <a href="#about"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        About Us
+      </a>
 
-        <a href="#book" class="flex-1 min-w-[48%] mb-2 text-center px-4 py-3 rounded-xl2
-       bg-indigo-50 text-indigoe-700 hover:bg-indigo-100 hover:text-indigoe-800 transition
-       md:flex-none md:min-w-0 md:mb-0 md:px-6 md:py-3">
-          Book an Appointment
-        </a>
-      </nav>
-    </div>
-  </header>
+      <a href="#departments"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        Departments
+      </a>
+
+      <a href="#services"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        Our Services
+      </a>
+
+      <a href="#book"
+        class="px-6 py-2.5 rounded-xl bg-white/60 backdrop-blur-lg shadow-sm
+               hover:bg-indigo-50 hover:text-indigo-700 transition">
+        Book Appointment
+      </a>
+
+    </nav>
+  </div>
+</header>
 
   <!-- Hero -->
   <section class="relative overflow-hidden bg-white">
@@ -204,13 +260,12 @@
     <div class="relative container mx-auto px-4 py-12 max-w-screen-xl">
       <div class="max-w-3xl">
         <h1 class="text-2xl md:text-3xl font-extrabold leading-tight text-slate-900">
-          Your Health, Our Duty —
-          <span class="text-indigoe-700">Expert care</span>
-          you can trust.
+          Every life matters. At Suchethana, we treat every patient with the respect and clarity they deserve.
+          <span class="text-indigoe-700"></span>
         </h1>
 
         <p class="mt-4 text-lg text-slate-600 max-w-xl">
-          Compassionate consultants, NABH-aligned protocols, and seamless diagnostics — all under one roof in Davangere.
+          Expert specialists, ethical care standards, and advanced diagnostic support — bringing comprehensive healthcare to Davangere under one trusted roof.
         </p>
 
         <ul class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-slate-700 max-w-2xl">
@@ -246,12 +301,12 @@
         <!-- Founder photo -->
         <div class="text-center md:text-left">
           <img src="/assets/img/dr_ravikumar_tg.jpg"
-            alt="Dr. Ravikumar T G, Founder of Aaraike Super Speciality Hospital"
+            alt="Chetan T.O, Director of Suchethana Multi-speciality Hospital"
             class="mx-auto md:mx-0 w-28 h-28 sm:w-36 sm:h-36 md:w-56 md:h-56 rounded-full object-cover ring-4 ring-slate-100 shadow-md" />
           <div class="mt-4">
-            <p class="text-lg font-extrabold text-slate-900">Dr. Ravikumar T G</p>
-            <p class="text-sm text-slate-600">Founder & Medical Director</p>
-            <p class="text-sm text-slate-500">Aaraike Super Speciality Hospital, Davangere</p>
+            <p class="text-lg font-extrabold text-slate-900">Chetan T O</p>
+            <p class="text-sm text-slate-600">Director</p>
+            <p class="text-sm text-slate-500">Suchethana multi-speciality Hospital, Davangere</p>
           </div>
         </div>
 
@@ -260,27 +315,19 @@
           <h2
             class="text-xl sm:text-2xl md:text-[1.85rem] font-extrabold text-slate-900 leading-tight whitespace-normal md:whitespace-nowrap">
 
-            Caring for our Community, with accountability and heart
+            Your Health. Our Priority. Every Moment.
           </h2>
 
           <p class="mt-4 text-slate-700 text-base md:text-lg leading-relaxed">
-            Aaraike Super Speciality Hospital was started with one simple promise:
-            every patient who walks in should receive the same dignity, clarity,
-            and timely treatment that we expect for our own families.
+            Suchethana Multi-Speciality Hospital is built on the belief that every individual deserves access to quality healthcare delivered with empathy and integrity. With modern infrastructure, advanced diagnostics, and a dedicated team of specialists, Suchethana aims to provide comprehensive medical care across various departments.
           </p>
 
           <p class="mt-4 text-slate-700 leading-relaxed">
-            Our consultants, nurses, and emergency team work together 24×7 to
-            stabilise, treat and guide — not just medicate and discharge. We
-            follow safe, NABH-aligned clinical practices, maintain transparent
-            communication with attenders, and keep most diagnostics in-house so
-            patients don’t run around.
+            Our approach is simple — clarity in communication, precision in treatment, and compassion in every interaction. We strive to make every patient feel supported, informed, and cared for, ensuring their recovery is guided with trust and comfort.
           </p>
 
           <p class="mt-4 text-slate-700 leading-relaxed">
-            We are proud to serve Davangere and surrounding taluks with intensive
-            care, women & child health, trauma support, and preventive medicine —
-            all under one roof.
+            At Suchethana, we are committed to raising the standards of healthcare in our community while staying rooted in our core values of honesty, dignity, and service.
           </p>
         </div>
       </div>
@@ -297,7 +344,7 @@
         Departments
       </h2>
       <p class="mt-2 text-slate-600 max-w-2xl">
-        Comprehensive care led by experienced consultants and supported by ICU, NICU, and day-care suites.
+        Specialist care in General Medicine, Gynaecology, and key medical specialties—all under one trusted hospital.
       </p>
     </div>
     <a href="#book"
@@ -311,7 +358,7 @@
     <!-- Emergency & Trauma -->
     <div class="dept-card" data-dept="Emergency & Trauma" data-aos="fade-up" data-aos-delay="0">
       <div class="flex items-center gap-3">
-        <img src="/assets/img/emergency.jpg" alt="Emergency Icon" class="h-20 w-20">
+        <img src="/assest/img/emergency.jpg" alt="Emergency Icon" class="h-20 w-20">
         <h3 class="text-lg font-bold text-indigoe-800">Emergency & Trauma</h3>
       </div>
       <p class="mt-2 text-slate-600 text-sm">
@@ -326,7 +373,7 @@
     <!-- General Medicine -->
     <div class="dept-card" data-dept="General Medicine" data-aos="fade-up" data-aos-delay="100">
       <div class="flex items-center gap-3">
-        <img src="/assets/img/genral_medicine.jpg" alt="General Icon" class="h-20 w-20">
+        <img src="/assest/img/genral_medicine.jpg" alt="General Icon" class="h-20 w-20">
         <h3 class="text-lg font-bold text-indigoe-800">General Medicine</h3>
       </div>
       <p class="mt-2 text-slate-600 text-sm">
@@ -338,40 +385,10 @@
       </button>
     </div>
 
-    <!-- Cardiology -->
-    <div class="dept-card" data-dept="Cardiology" data-aos="fade-up" data-aos-delay="200">
-      <div class="flex items-center gap-3">
-        <img src="/assets/img/cardiology.jpg" alt="Cardiology Icon" class="h-20 w-30">
-        <h3 class="text-lg font-bold text-indigoe-800">Cardiology</h3>
-      </div>
-      <p class="mt-2 text-slate-600 text-sm">
-        Advanced cardiac care including Echo, ECG & non-invasive diagnostics.
-      </p>
-      <button
-        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
-        View Doctors
-      </button>
-    </div>
-
-    <!-- Orthopedics -->
-    <div class="dept-card" data-dept="Orthopedics" data-aos="fade-up" data-aos-delay="300">
-      <div class="flex items-center gap-3">
-        <img src="/assets/img/orthopedic.jpg" alt="Orthopedic Icon" class="h-20 w-20">
-        <h3 class="text-lg font-bold text-indigoe-800">Orthopedics</h3>
-      </div>
-      <p class="mt-2 text-slate-600 text-sm">
-        Fractures, joint replacements & sports injury management.
-      </p>
-      <button
-        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
-        View Doctors
-      </button>
-    </div>
-
     <!-- Women & Child -->
     <div class="dept-card" data-dept="Women & Child" data-aos="fade-up" data-aos-delay="400">
       <div class="flex items-center gap-3">
-        <img src="/assets/img/womenchild.jpg" alt="Women & Child Icon" class="h-20 w-20">
+        <img src="/assest/img/womenchild.jpg" alt="Women & Child Icon" class="h-20 w-20">
         <h3 class="text-lg font-bold text-indigoe-800">Women & Child</h3>
       </div>
       <p class="mt-2 text-slate-600 text-sm">
@@ -382,22 +399,6 @@
         View Doctors
       </button>
     </div>
-
-    <!-- Diagnostics -->
-    <div class="dept-card" data-dept="Diagnostics" data-aos="fade-up" data-aos-delay="500">
-      <div class="flex items-center gap-3">
-        <img src="/assets/img/diagnostics.jpg" alt="Diagnostics Icon" class="h-20 w-20">
-        <h3 class="text-lg font-bold text-indigoe-800">Diagnostics</h3>
-      </div>
-      <p class="mt-2 text-slate-600 text-sm">
-        Digital X-Ray, Ultrasound, pathology & pharmacy.
-      </p>
-      <button
-        class="view-doctors-btn mt-4 px-4 py-2 bg-meadow-100 hover:bg-meadow-200 text-meadow-800 rounded-xl font-semibold transition">
-        View Doctors
-      </button>
-    </div>
-  </div>
 </section>
 
 <!-- ================== Doctor Modal ================== -->
@@ -428,25 +429,13 @@
       { name: "Dr. Kavya", spec: "Emergency Medicine", img: "/assets/img/doctors/kavya.jpg" }
     ],
     "General Medicine": [
-      { name: "Dr. Praveen", spec: "General Physician", img: "/assets/img/doctors/praveen.jpg" },
+      { name: "Dr. Darshan", spec: "General Physician", img: "/assets/img/doctors/praveen.jpg" },
       { name: "Dr. Nisha", spec: "Diabetologist", img: "/assets/img/doctors/nisha.jpg" }
     ],
-    "Cardiology": [
-      { name: "Dr. Sridhar", spec: "Consultant Cardiologist", img: "/assets/img/doctors/sridhar.jpg" },
-      { name: "Dr. Divya", spec: "Cardiac Rehab Specialist", img: "/assets/img/doctors/divya.jpg" }
-    ],
-    "Orthopedics": [
-      { name: "Dr. Manjunath", spec: "Joint Replacement Surgeon", img: "/assets/img/doctors/manjunath.jpg" },
-      { name: "Dr. Vishal", spec: "Sports Injury Specialist", img: "/assets/img/doctors/vishal.jpg" }
-    ],
     "Women & Child": [
-      { name: "Dr. Kavitha", spec: "Gynecologist & Obstetrician", img: "/assets/img/doctors/kavitha.jpg" },
+      { name: "Dr. SumitraDevi", spec: "Gynecologist & Obstetrician", img: "/assets/img/doctors/kavitha.jpg" },
       { name: "Dr. Preethi", spec: "Pediatrician", img: "/assets/img/doctors/preethi.jpg" }
     ],
-    "Diagnostics": [
-      { name: "Dr. Nagesh", spec: "Radiologist", img: "/assets/img/doctors/nagesh.jpg" },
-      { name: "Dr. Sneha", spec: "Pathologist", img: "/assets/img/doctors/sneha.jpg" }
-    ]
   };
 
   const viewBtns = document.querySelectorAll('.view-doctors-btn');
@@ -566,14 +555,8 @@
     { name: "Dr. Kavya", spec: "Emergency Medicine", dept: "Emergency & Trauma", img: "/assets/img/doctors/kavya.jpg" },
     { name: "Dr. Praveen", spec: "General Physician", dept: "General Medicine", img: "/assets/img/doctors/praveen.jpg" },
     { name: "Dr. Nisha", spec: "Diabetologist", dept: "General Medicine", img: "/assets/img/doctors/nisha.jpg" },
-    { name: "Dr. Sridhar", spec: "Cardiologist", dept: "Cardiology", img: "/assets/img/doctors/sridhar.jpg" },
-    { name: "Dr. Divya", spec: "Cardiac Rehab Specialist", dept: "Cardiology", img: "/assets/img/doctors/divya.jpg" },
-    { name: "Dr. Manjunath", spec: "Joint Replacement Surgeon", dept: "Orthopedics", img: "/assets/img/doctors/manjunath.jpg" },
-    { name: "Dr. Vishal", spec: "Sports Injury Specialist", dept: "Orthopedics", img: "/assets/img/doctors/vishal.jpg" },
     { name: "Dr. Kavitha", spec: "Gynecologist & Obstetrician", dept: "Women & Child", img: "/assets/img/doctors/kavitha.jpg" },
     { name: "Dr. Preethi", spec: "Pediatrician", dept: "Women & Child", img: "/assets/img/doctors/preethi.jpg" },
-    { name: "Dr. Nagesh", spec: "Radiologist", dept: "Diagnostics", img: "/assets/img/doctors/nagesh.jpg" },
-    { name: "Dr. Sneha", spec: "Pathologist", dept: "Diagnostics", img: "/assets/img/doctors/sneha.jpg" }
   ];
 
   const grid = document.getElementById("doctorGrid");
@@ -769,19 +752,21 @@
       <div class="rounded-2xl bg-white border border-slate-200 p-6">
         <h3 class="text-xl font-extrabold">Contact</h3>
         <ul class="mt-4 grid gap-3 text-slate-700">
-          <li class="flex gap-3"><span class="mt-0.5">📍</span> #1686/1, Between 6th & 7th Cross, Yajaman Mothi Doddappa
-            Layout, Hadadi Road, Davangere - 577002</li>
+          <li class="flex gap-3"><span class="mt-0.5">📍</span> No 284/123, 4th Main,
+Opposite to Vishweshwaraiah Park Main Gate,
+PJ Extension, Davanagere City,
+Davanagere - 577002.</li>
           <li class="flex gap-3"><span>📞</span> <a class="underline decoration-indigoe-300 underline-offset-4"
               href="tel:+918431541487">+91 84315 41487</a> · <a
               class="underline decoration-indigoe-300 underline-offset-4" href="tel:08192233446">08192-233446</a></li>
           <li class="flex gap-3"><span>✉️</span> <a class="underline decoration-indigoe-300 underline-offset-4"
-              href="mailto:care@aaraikehospitals.com">care@aaraikehospitals.com</a></li>
+              href="mailto:care@aaraikehospitals.com">Suchethana.hospital@gmail.com</a></li>
           <li class="flex gap-3"><span>🕒</span> 24x7 Emergency • OPD: 9am–7pm</li>
         </ul>
       </div>
       <div class="rounded-2xl overflow-hidden ring-1 ring-slate-200 shadow-lift">
         <iframe title="Google Map"
-          src="https://maps.google.com/maps?q=Hadadi%20Road%20Davangere&t=&z=14&ie=UTF8&iwloc=&output=embed"
+          src="https://maps.app.goo.gl/Fd9BdWpLSPas2xfB6"
           class="w-full h-80"></iframe>
       </div>
     </div>
@@ -791,7 +776,7 @@
   <footer class="bg-indigoe-900 text-white">
     <div class="container mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
       <div>
-        <p class="text-xl font-extrabold">Aaraike Super Speciality Hospital</p>
+        <p class="text-xl font-extrabold">Suchethana Multi-Speciality Hospital</p>
         <p class="mt-1 text-indigoe-200">Care • Trust • Excellence</p>
       </div>
       <nav class="grid gap-2 text-indigoe-200">
@@ -801,7 +786,7 @@
         <a href="/kn/" class="hover:text-white">ಕನ್ನಡ</a>
       </nav>
       <div class="grid gap-3">
-        <p class="text-sm text-indigoe-300">© <span id="year"></span> Aaraike Super Speciality Hospital, Davangere</p>
+        <p class="text-sm text-indigoe-300">© <span id="year"></span> Suchethana Multi-Speciality Hospital, Davangere</p>
         <p class="text-sm text-indigoe-300">
           Developed and maintained by
           <a href="https://sidtech.in" target="_blank" rel="noopener"
